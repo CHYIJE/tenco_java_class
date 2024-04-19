@@ -39,10 +39,38 @@ public class Person {
 		// 자신의 주소값을 반환 시킨다.
 		return this;  
 	}
+	public String getName() {
+		return this.name;
+	}
 	
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public int getAge() {
+		return this.age;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public String getPhone() {
+		return this.phone;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	public String getGender() {
+		return this.gender;
+	}
+	
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
 	
 	public void showInfo() {
 		System.out.println("이름 : " + name + " 나이 : " + age);
