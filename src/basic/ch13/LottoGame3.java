@@ -22,32 +22,51 @@ public class LottoGame3 {
 		// 테스트 값 : 5 1 9 7 2 3
 		// 반복의 횟수 : 6
 		for (int pass = 1; pass <= 6; pass++) {
+				// 5 > 1 참
 			if (gameNumber1 > gameNumber2) {
+				// 0 <-- 5
 				box = gameNumber1;
+				// 0 = 5 | 5 <-- 5
 				gameNumber1 = gameNumber2;
+				// 5 = 1 | 5 <-- 1
 				gameNumber2 = box;
 			}
+				//	5 > 9  삐빅 거짓 넘겨
 			if (gameNumber2 > gameNumber3) {
 				box = gameNumber2;
 				gameNumber2 = gameNumber3;
 				gameNumber3 = box;
 			}
+			 // 9 > 7 참 
 			if (gameNumber3 > gameNumber4) {
+				// 0 <-- 9  
 				box = gameNumber3;
+				// 9 = 7 | 9 <-- 7
 				gameNumber3 = gameNumber4;
+				// 7 = 9 | 7 <-- 9 
 				gameNumber4 = box;
 			}
+			// 9 > 2 참
 			if (gameNumber4 > gameNumber5) {
+				// 0 <-- 9 
 				box = gameNumber4;
+				// 9 = 2 | 9 <-- 2
 				gameNumber4 = gameNumber5;
+				// 2 = 9 | 2 <-- 9
 				gameNumber5 = box;
 			}
+				// 9 > 3 참
 			if (gameNumber5 > gameNumber6) {
+				// 0 <-- 9 
 				box = gameNumber5;
+				// 9 = 3 | 9 <-- 3
 				gameNumber5 = gameNumber6;
+				// 3 = 9  | 3 <-- 9  
 				gameNumber6 = box;
 			}
 		}
+		
+		// 거짓이 되도록 계속 반복해서 수를 정렬한다.
 
 		///////////////////////////////////////////////////////
 
