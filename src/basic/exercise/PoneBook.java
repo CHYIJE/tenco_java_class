@@ -26,8 +26,7 @@ public class PoneBook {
 	public String getPoneNumber() {
 		return poneNumber;
 	}
-	
-	
+
 	// 기능
 
 	public void setName(String name) {
@@ -49,7 +48,7 @@ public class PoneBook {
 		PoneBook poneBooks = new PoneBook(poneName, PoneNum);
 
 		if (LAST_INDEX_NUMBER >= poneBook.length) {
-			System.out.println("더이상 책을 저장할 공간이 없습니다.");
+			System.out.println("더이상 사람을 저장할 공간이 없습니다.");
 			return;
 		}
 
@@ -60,7 +59,7 @@ public class PoneBook {
 				break;
 			}
 		}
-		System.out.println("책이 저장되었습니다.");
+		System.out.println("연락처가 저장되었습니다.");
 	}
 
 	// 폰 번호를 조회한다.
@@ -84,10 +83,12 @@ public class PoneBook {
 		
 		
 		for (int i = 0; i < ponebook.length; i++) {
-			ponebook[i].setName(nameChange);
-			ponebook[i].setPoneNumber(NumberChange);
-			System.out.println("변경 되었습니다.");
-			break;	
+			if(ponebook[i].equals(ponebook)) {
+				ponebook[i].setName(nameChange);
+				ponebook[i].setPoneNumber(NumberChange);
+				System.out.println("변경 되었습니다.");
+				break;
+			}
 	}
 
 	}
@@ -121,4 +122,5 @@ public class PoneBook {
 			System.out.println("해당 이름은 존재하지 않습니다.");
 		}
 	}
+
 } // end of class

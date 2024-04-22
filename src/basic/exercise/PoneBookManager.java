@@ -28,6 +28,7 @@ public class PoneBookManager {
 		final String FIX = "3";
 		final String DELET = "4";
 		final String SELECT_SEARCH = "5";
+		final String SELECT_DELET = "6";
 		final String END = "0";
 		boolean flag = true;
 
@@ -50,8 +51,8 @@ public class PoneBookManager {
 				System.out.println(">> 삭제하기 <<");
 				PoneBook.delet(ponebooks);
 			}else if (selectedNumber.equals(SELECT_SEARCH)) { 
-					System.out.println(">> 선택 조회하기 <<");
-					PoneBook.selectNum(sc, ponebooks);
+				System.out.println(">> 선택 조회하기 <<");
+				PoneBook.selectNum(sc, ponebooks);
 			} else if (selectedNumber.equals(END)) {
 				System.out.println(">> 프로그램 종료 <<");
 				flag = false;
