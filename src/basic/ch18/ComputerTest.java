@@ -9,7 +9,7 @@ public class ComputerTest {
 		
 		computer1.computerStart();
 		computer1.computerStop();
-		System.out.println(computer1.cpu.price + " 원 짜리 " + computer1.cpu.name + "를 바꾸시는걸 추천드립니다.");
+		System.out.println(computer1.cpu.price + "원 짜리 " + computer1.cpu.name + "를 바꾸시는걸 추천드립니다.");
 	}
 
 }
