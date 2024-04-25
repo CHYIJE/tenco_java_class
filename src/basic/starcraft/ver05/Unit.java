@@ -3,7 +3,7 @@ package basic.starcraft.ver05;
 /**
  * public protected -- 상속관계 설정할 수 있다. default private
  */
-public class Unit {
+public abstract class Unit {
 
 	protected String name;
 	protected int power;
@@ -39,12 +39,6 @@ public class Unit {
 		this.hp = hp;
 	}
 
-	public void showInfo() {
-		System.out.println("=== 상태창 ===");
-		System.out.println("이름 : " + this.name);
-		System.out.println("공격력 : " + this.power);
-		System.out.println("생명력 : " + this.hp);
-	}
 
 	// 자신이 공격을 당합니다.
 	public void beAttacked(int power) {
@@ -65,4 +59,10 @@ public class Unit {
 		zl.beAttacked(this.power);
 	}
 
+	public void showInfo() {
+		System.out.println("=== 상태창 ===");
+		System.out.println("이름 : " + this.name);
+		System.out.println("공격력 : " + this.power);
+		System.out.println("생명력 : " + this.hp);
+	}
 }
