@@ -7,7 +7,7 @@ public class NickNameMainTest {
 		NickName nickName = new NickName();
 		
 		String inputNick = null;
-		inputNick = "김수한";
+		inputNick = "bsd3";
 		nickName.setNick(inputNick);
 		
 		try {

@@ -15,7 +15,7 @@ public class NickName {
 		if (nick.length() < 3 || nick.length() > 10) {
 			throw new NickNameException("3글자 이상 10자 이하로 작성해주세요.");
 		}
-		if (nick.matches("[a-zA-Z]*$")) {
+		if (nick.matches("[a-zA-Z0-9]*$")) {
 			throw new NickNameException("한글로만 작성해주세요");
 		}
 		this.nick = nick;
