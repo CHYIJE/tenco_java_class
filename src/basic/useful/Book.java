@@ -31,5 +31,5 @@ public class Book {
 
 		String str1 = new String("안녕");
 	}
-
+	// 자리 이동 깃 확인용
 }
