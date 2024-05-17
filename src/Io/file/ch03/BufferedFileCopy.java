@@ -29,7 +29,7 @@ public class BufferedFileCopy {
 				// 파일에 출력
 				buOut.write(data);
 			}
-			System.out.println("입력스트림 --> 출력 스트림 --> 입력 --> 출력의 반복 완료");
+			buOut.flush();
 
 		} catch (Exception e) {
 		}
